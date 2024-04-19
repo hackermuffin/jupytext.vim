@@ -122,6 +122,8 @@ endif
 " for all the formats that jupytext takes for --to, the filetype that vim
 " should use (this determines syntax highlighting)
 let s:jupytext_filetype_map = {
+\   'quarto': 'quarto',
+\   'qmd': 'quarto',
 \   'rmarkdown': 'rmarkdown',
 \   'markdown': 'markdown',
 \   'python': 'python',
@@ -167,6 +169,7 @@ let s:jupytext_filetype_map = {
 " for all the formats that jupytext takes for --to, the file extension that
 " should be used for the linked file
 let s:jupytext_extension_map = {
+\   'quarto': 'qmd',
 \   'rmarkdown': 'Rmd',
 \   'markdown': 'md',
 \   'python': 'py',
